@@ -5,7 +5,7 @@ import Loader from './components/Loader';
 
 const App = () => {
 
-	const BASE_URL = "http://13.200.151.6";
+	const BASE_URL = "http://www.mlapi.online";
 
 	const [result,setResult] = useState('');
 	const [selectedFile, setSelectedFile] = useState(null);
