@@ -5,7 +5,7 @@ import Loader from './components/Loader';
 
 const App = () => {
 
-	const BASE_URL = "http://www.mlapi.online";
+	const BASE_URL = "https://mlapi.online";
 
 	const [result,setResult] = useState('');
 	const [selectedFile, setSelectedFile] = useState(null);
@@ -70,7 +70,7 @@ const App = () => {
 			const response = await fetch(`${BASE_URL}/dog-breed-identifier/url`,{
 				method:"POST",
 				headers: {
-					'Content-Type': 'application/json' // Specify content type as JSON
+					'Content-Type': 'application/json'
 				},			
 				body:JSON.stringify({"url":url})
 			})
